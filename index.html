@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>int-college projects</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/style.css">
+        <script src="static/script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href=""><img src="static/imag/cropped-logo_in_cube.png" alt="" style="height: 80px; width: 70px; border-radius: 100%;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#maxDigit"><button type="button" class="btn btn-info">Maximum Digit</button></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sumOfDigits"><button type="button" class="btn btn-info">Sum of Digits</button></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#reverseDigit"><button type="button" class="btn btn-info">Reverse Digits</button></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#powerOfNum"><button type="button" class="btn btn-info">Power a number</button></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    <div id="home">
+        <section id="maxDigit" class="b maxDigit">            
+            <figure>
+                <img src="./static/imag/maxdigit.jpg" width="200px" alt="">
+                <figcaption><i>Digits of base ten</i></figcaption>
+            </figure>            
+            <fieldset>
+                <legend>Maximum Digit</legend>                   
+                <div class="mb-3">
+                    <label for="maxDigit" class="form-label">Enter a Number</label>
+                    <input type="number" class="form-control" id="num1">
+                </div>
+                <button id="maxDigit"  class="btn btn-primary" onclick="anotherOne()">Show Maximum Digit</button>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="maxd">
+                <div class="form-text">to find the maximum of digits in a number we use the concept of modulo to get the last digit and recursion</div>
+                </div>                        
+            </fieldset>
+        </section>
+        <div style="clear:both;"></div>
+        <section id="sumOfDigits" class="b sumOfDigits">
+            <figure>
+                <img src="./static/imag/sumOfDigits.png" alt="">
+                <figcaption><i>sum of digits for the given Number</i></figcaption>
+            </figure>
+            <fieldset>
+                <legend>Sum of Digits</legend>                 
+                <div class="mb-3">
+                    <label for="sumOfDigits" class="form-label">Enter a Number</label>
+                    <input type="number" class="form-control" id="num2">
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="sumdig()">Show sum of Digits</button>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="sdig">
+                <div class="form-text">to find the sum of digits in a number we use the concept of modulo to get the last digit and recursion </div>
+                </div>                        
+            </fieldset>
+        </section>
+        <div style="clear:both;"></div>
+        <section id="reverseDigit" class="b reverseDigit">
+            <figure>
+                <img src="./static/imag/maxresdefault.jpg" width="200px" alt="">
+                <figcaption><i>reversing the digits of a number</i></figcaption>
+            </figure>
+            <fieldset>
+                <legend>Reverse Digits</legend>               
+                <div class="mb-3">
+                    <label for="reverseDigit" class="form-label">Enter a Number</label>
+                    <input type="number" class="form-control" id="num3">
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="reverseDigit()">reverse Digits</button>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="rdig">
+                <div class="form-text">to reverse digits of a number we use the concept of modulo to get the last digit and recursion  </div>
+                </div>                        
+            </fieldset>
+        </section>
+        <div style="clear:both;"></div>
+        <section id="powerOfNum" class="b powerOfNum">
+            <figure>
+                <img src="./static/imag/exponent.png" width="200px" alt="">
+                <figcaption><i>calculte the power of a number</i></figcaption>
+            </figure>
+            <fieldset>
+                <legend>Power of Number</legend>               
+                <div class="mb-3">
+                    <label for="powerOfNum" class="form-label">Enter the base</label>
+                    <input type="number" class="form-control" id="num4">
+                </div>
+                <div class="mb-3">
+                    <label for="powerOfNum" class="form-label">Enter the exponent</label>
+                    <input type="number" class="form-control" id="num5">
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="expo()">calculate</button>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="Rpower">
+                <div class="form-text">to get the power of a number we use the concept of recursion with multiplication operator </div>
+                </div>                        
+            </fieldset>
+        </section>
+        <div style="clear:both;"></div>
+    </div>
+    <div id="go-home" class="iconbutton">
+        <a href="#home">
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+        </a>
+    </div>  
+    <footer>Learn more about HTML and CSS as a part of Int-college full-stack web development certification &copy;2023 solomon kassahun</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
